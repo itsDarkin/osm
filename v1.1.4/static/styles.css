@@ -1,0 +1,104 @@
+/* Térkép alapstílus */
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Modális ablak */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modális ablak tartalma */
+.modal-content {
+  background-color: #f9f9f9;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-width: 90%;
+  animation: fadeIn 0.5s;
+}
+
+/* Fejléc és szöveg formázás */
+h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  text-align: center;
+  color: #333;
+}
+
+label {
+  font-size: 0.9em;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Bemeneti mezők stílusa */
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 0.9em;
+}
+
+/* Gombok stílusa */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#save-point {
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#save-point:hover {
+  background-color: #45a049;
+}
+
+#cancel-point {
+  background-color: #f44336;
+  color: white;
+}
+
+#cancel-point:hover {
+  background-color: #e53935;
+}
+
+/* Bezáró gomb stílus */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Finom beúszó animáció a modál tartalmához */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

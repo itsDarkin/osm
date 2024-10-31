@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OSM és Mapillary integráció Veszprémhez</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- Modális ablak az új pont létrehozásához -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Új pont hozzáadása</h2>
+      <label for="point-name">Név:</label>
+      <input type="text" id="point-name" placeholder="Pont neve">
+
+      <label for="point-description">Leírás:</label>
+      <textarea id="point-description" placeholder="Pont leírása"></textarea>
+
+      <label for="point-image">Kép feltöltése:</label>
+      <input type="file" id="point-image" accept="image/*" capture="camera">
+
+
+      <button id="save-point">Pont hozzáadása</button>
+      <button id="cancel-point">Mégse</button>
+    </div>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
